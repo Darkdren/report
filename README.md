@@ -36,6 +36,25 @@ Desarrollo de Aplicaciones Open Source <br>
 <div style="page-break-before: always;"></div>
 
 
+# Registro de Versiones del Informe
+| Versión | Fecha       | Autor(es)                                                              | Descripción                                                                                                                                         |
+|---------|-------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0.1     | 30/04/2026  | Eslander Celis Berrospi        | Desarrollo del capítulo I: Introducción                                                                                                             |
+
+
+
+# Project Report Collaboration Insights
+Link del repositorio: 
+
+
+Insights TB1 (Todos participaron):
+<p align="left">
+  <img src="images/estad1.PNG" alt="tb1avance" width="500">
+</p>
+
+<p align="left">
+  <img src="images/estad2.PNG" alt="tb1avance" width="500">
+</p>
 
 
 ## Contenido
