@@ -24,7 +24,7 @@ Desarrollo de Aplicaciones Open Source <br>
 |-------------------------|------------|
 | Eslander Celis Berrospi | U201911249 |
 | Rodrigo Oblitas Alcalde | U20221G185 |
-|                         | U          |
+| Mariano Vilela Menendez | U201918216 |
 |                         | U          |
 |                         | U          |
 
