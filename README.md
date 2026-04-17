@@ -590,9 +590,25 @@ Software especializado para la creación de informes de cumplimiento sanitario.
 
 Muy utilizado en laboratorios y grandes centros de almacenamiento.
 ### 2.1.1. Analisis competitivo
-Para este análisis, compararemos ColdTrack con soluciones que operan en Perú, evaluando características clave de IoT y Software.
+| ¿Por qué llevar a cabo este análisis? | Pregunta: ¿Deberíamos llevar a cabo este análisis para conocer el entorno, la competencia, tomar decisiones de desarrollo y construir nuestra propuesta de valor? |
+| :--- | :--- |
+
+| Productos | ColdTrack | Hunter Monitoreo | Beetrack | Termógrafos USB |
+| :--- | :--- | :--- | :--- | :--- |
+| **Perfil** | **Overview** | App + IoT especializada en monitoreo de temperatura y humedad en tiempo real para la cadena de frío alimentaria. | Empresa de seguridad y rastreo GPS con módulos de control de temperatura para flotas logísticas. | Plataforma SaaS de última milla centrada en optimización de rutas y trazabilidad de entrega al cliente. | Dispositivos físicos que registran datos térmicos localmente para descarga manual post-viaje. |
+| | **Ventaja competitiva** | Especialización en inocuidad, alertas críticas en tiempo real, trazabilidad por lote y modo offline automático. | Infraestructura de seguridad robusta y soporte técnico local consolidado en Perú. | Interfaz intuitiva, enfoque en la experiencia del cliente final y optimización logística. | Bajo costo, no requiere instalación técnica y alta precisión de sensores certificados. |
+| **Perfil de Marketing** | **Mercado Objetivo** | Empresas distribuidoras de alimentos, supermercados y operadores logísticos en Perú y Latam. | Empresas de transporte de carga pesada, seguridad de activos y logística general. | Empresas de retail, consumo masivo y servicios de delivery de última milla. | Laboratorios farmacéuticos y pequeños productores de alimentos para auditorías. |
+| | **Estrategias de Marketing** | Alianzas con gremios alimentarios, marketing digital enfocado en B2B y demostraciones de IoT. | Campañas institucionales masivas, convenios de seguridad y marketing directo. | Marketing de contenidos, presencia en eventos logísticos y alianzas con e-commerce. | Distribución minorista, ventas por volumen en marketplaces y ferias industriales. |
+| **Perfil de Producto** | **Productos & Servicios** | Monitoreo Real-time, alertas push, trazabilidad por lote, reportes de calidad e historial. | Rastreo GPS, sensores de combustible/temp, control de flotas y recuperación de robos. | Planificación de rutas, trazabilidad de despacho, prueba de entrega digital y métricas. | Registro de temperatura/humedad, generación de reportes PDF/Excel mediante conexión USB. |
+| | **Precios & Costos** | Suscripción SaaS mensual por unidad monitoreada + costo único inicial por kit de sensores. | Costo elevado de instalación fija + cuotas mensuales de servicio de monitoreo 24/7. | Modelo de suscripción basado en el volumen de despachos o número de conductores. | Pago único por dispositivo (desechables o reutilizables). Sin cuotas mensuales. |
+| | **Canales de distribución** | Web oficial, venta consultiva directa y partners tecnológicos de hardware IoT. | Red de oficinas físicas a nivel nacional, agentes de ventas y convenios corporativos. | Plataforma web (SaaS), equipos de ventas regionales y App Stores. | Distribuidores de suministros industriales, ferreterías técnicas y canales online. |
+| **Análisis SWOT** | **Fortalezas** | Especialización nativa en alimentos, alertas en tiempo real y facilidad de uso operativo. | Respaldo de marca, amplia cobertura en Perú y capacidad de respuesta ante robos. | Excelente UI/UX, líder en optimización de rutas y alta compatibilidad con ERPs. | Precisión técnica certificada, autonomía total (no depende de red) y bajo costo. |
+| | **Debilidades** | Startup nueva en el mercado, requiere validación de confianza ante grandes corporaciones. | Interfaz compleja, costo de mantenimiento alto y enfoque secundario en temperatura. | No especializado en condiciones ambientales (temperatura), depende 100% de la nube. | No permite reacción inmediata, requiere intervención manual para leer datos. |
+| | **Oportunidades** | Normativas de salud más estrictas, digitalización de PYMES y expansión regional. | Integrar IA para predicción de fallas y diversificar servicios de sensorización. | Expandir funciones hacia el control de cadena de frío y nuevos mercados en Latam. | Implementar versiones con conexión Bluetooth para descarga inalámbrica básica. |
+| | **Amenazas** | Competencia de empresas de GPS consolidadas y resistencia al cambio tecnológico. | Nuevas startups con tecnologías más ligeras (IoT) y precios más agresivos. | Saturación del mercado de última milla y entrada de competidores globales. | Digitalización total de la cadena que vuelva obsoletos los dispositivos "offline". |
 
 ### 2.1.2. Estrategias y tacticas frente a competidores
+
 
 ## 2.2. Entrevistas
 
