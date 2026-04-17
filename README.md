@@ -528,7 +528,67 @@ Este segmento está compuesto por las personas encargadas de trasladar los alime
 # Capitulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
+En esta sección, se presenta un análisis de los principales competidores de nuestra startup, centrado en aquellos que operan con modelos de negocio basados en logística inteligente o que ofrecen servicios que se superponen con las funciones de monitoreo térmico de ColdTrack. Evaluamos tanto competidores directos, enfocados en la cadena de frío, como competidores indirectos que ofrecen soluciones de rastreo satelital generalista.
 
+1. Hunter Monitoreo
+
+Descripción:
+
+Hunter es una empresa líder en el mercado peruano con una amplia trayectoria en soluciones de seguridad y rastreo vehicular. Aunque su enfoque principal es la recuperación de vehículos y la seguridad ante robos, cuentan con módulos adicionales para la gestión de flotas que incluyen sensores de temperatura para carga crítica.
+
+Principales características:
+
+Rastreo satelital GPS en tiempo real con cobertura nacional.
+
+Sensores de temperatura integrados al hardware del vehículo.
+
+Plataforma de monitoreo orientada principalmente a la seguridad patrimonial.
+
+Soporte técnico local y centrales de monitoreo 24/7.
+
+Reportes de paradas, rutas y cumplimiento de horarios.
+
+Infraestructura robusta y consolidada en el sector transporte en Perú.
+
+2. Beetrack (DispatchTrack)
+
+Descripción:
+
+Beetrack es una plataforma de software enfocada en la gestión de última milla y logística de distribución. Su fuerte es la optimización de rutas y la experiencia del cliente final, permitiendo a las empresas tener una trazabilidad completa del proceso de entrega mediante el uso de smartphones.
+
+Principales características:
+
+Monitoreo de guías de despacho en tiempo real.
+
+Optimización de rutas para reducir tiempos de entrega.
+
+Notificaciones al cliente final sobre el estado de su pedido.
+
+Recolección de pruebas de entrega (fotos, firmas digitales).
+
+Dashboard analítico sobre el desempeño de los transportistas.
+
+Se integra fácilmente con otros sistemas de gestión empresarial (ERP).
+
+3. Testo (Soluciones de registro)
+
+Descripción:
+
+Testo es un competidor indirecto de hardware que ofrece data loggers o termógrafos de alta precisión. A diferencia de las plataformas integradas, Testo se especializa en el registro físico de datos ambientales que luego son descargados por el usuario para auditorías de calidad.
+
+Principales características:
+
+Dispositivos de medición de temperatura y humedad de grado farmacéutico.
+
+Alta precisión y calibración certificada.
+
+Modelos con conexión USB o WiFi para descarga de datos.
+
+Memoria interna para almacenamiento de lecturas en trayectos largos.
+
+Software especializado para la creación de informes de cumplimiento sanitario.
+
+Muy utilizado en laboratorios y grandes centros de almacenamiento.
 ### 2.1.1. Analisis competitivo
 Para este análisis, compararemos ColdTrack con soluciones que operan en Perú, evaluando características clave de IoT y Software.
 
