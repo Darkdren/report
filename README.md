@@ -725,6 +725,8 @@ Táctica: Permitir la vinculación de sensores móviles directamente a los lotes
 
 ## 3.3. Impact Mapping
 
+<img src="./images/IMPACTMAPP.png" alt="tobetransportistas" width="90%">
+
 ## 3.4. Product Backlog
 | Prioridad | User Story ID | Título HU | Story Points |
 |----------|--------------|----------|-------------|
