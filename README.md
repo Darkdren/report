@@ -663,10 +663,86 @@ Táctica: Permitir la vinculación de sensores móviles directamente a los lotes
 ## 3.1. To-Be Scenario Mapping
 
 ## 3.2. User Stories
+### Epics
+
+| Epic ID | Título                     | Descripción                                                                                                          |
+| ------- | -------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| EP-001  | Gestión de Usuarios        | Permite el registro, autenticación y gestión de perfiles según tipo de usuario (Logística u Operador de Transporte). |
+| EP-002  | Gestión de Envíos          | Permite crear, visualizar y administrar los envíos monitoreados.                                                     |
+| EP-003  | Monitoreo en Tiempo Real   | Permite visualizar temperatura y humedad en tiempo real mediante sensores.                                           |
+| EP-004  | Alertas y Notificaciones   | Genera alertas automáticas ante condiciones críticas.                                                                |
+| EP-005  | Landing Page e Información | Presenta información del sistema, contacto, testimonios y suscripción.                                               |
+
+
+
+### User Stories + Technical Stories
+
+| ID | Título | Descripción | Criterios de Aceptación | Epic |
+|----|--------|-------------|--------------------------|------|
+| US-001 | Registro de usuario | Como usuario, quiero registrarme seleccionando mi rol para acceder al sistema. | - Escenario 1: Registro como personal de logística<br>Dado que un usuario accede al formulario de registro<br>Cuando completa todos los datos correctamente y selecciona el rol “Logística”<br>Entonces el sistema registra su cuenta exitosamente<br>Y le permite acceder a funcionalidades de supervisión<br><br>- Escenario 2: Registro como personal de transporte<br>Dado que un usuario accede al formulario de registro<br>Cuando completa todos los datos correctamente y selecciona el rol “Transporte”<br>Entonces el sistema registra su cuenta exitosamente<br>Y le permite acceder a funcionalidades en ruta | EP-001 |
+| US-002 | Inicio de sesión | Como usuario, quiero iniciar sesión para acceder a mi cuenta. | - Escenario 1: Inicio exitoso<br>Dado que el usuario está registrado en el sistema<br>Cuando ingresa sus credenciales correctamente<br>Entonces el sistema valida la información<br>Y permite el acceso al panel principal<br><br>- Escenario 2: Credenciales incorrectas<br>Dado que el usuario ingresa datos inválidos<br>Cuando intenta iniciar sesión<br>Entonces el sistema muestra un mensaje de error<br>Y bloquea el acceso | EP-001 |
+| US-003 | Recuperar contraseña | Como usuario, quiero recuperar mi contraseña. | - Escenario 1: Recuperación exitosa<br>Dado que el usuario olvidó su contraseña<br>Cuando ingresa su correo registrado<br>Entonces el sistema envía un enlace de recuperación<br>Y le permite restablecer su contraseña<br><br>- Escenario 2: Correo inválido<br>Dado que el correo no está registrado<br>Cuando intenta recuperar su contraseña<br>Entonces el sistema muestra un mensaje de error | EP-001 |
+| TS-001 | Crear usuario | Como developer, quiero registrar usuarios en BD. | - Escenario 1: Creación exitosa<br>Dado que se reciben datos válidos<br>Cuando se procesa la solicitud de registro<br>Entonces el sistema guarda el usuario en la base de datos<br>Y retorna una respuesta exitosa<br><br>- Escenario 2: Datos inválidos<br>Dado que faltan campos obligatorios<br>Cuando se procesa la solicitud<br>Entonces el sistema rechaza la operación<br>Y retorna un error | EP-001 |
+| TS-002 | Autenticación | Como developer, quiero validar login. | - Escenario 1: Autenticación válida<br>Dado que las credenciales coinciden con un usuario registrado<br>Cuando se realiza la validación<br>Entonces el sistema genera un token de acceso válido<br><br>- Escenario 2: Autenticación inválida<br>Dado que las credenciales no coinciden<br>Cuando se intenta autenticar<br>Entonces el sistema retorna un error de acceso | EP-001 |
+| US-004 | Crear envío | Como personal de logística, quiero registrar un envío. | - Escenario 1: Registro exitoso<br>Dado que el usuario completa todos los campos requeridos<br>Cuando registra el envío<br>Entonces el sistema guarda la información correctamente<br>Y el envío aparece en la lista de envíos activos<br><br>- Escenario 2: Datos incompletos<br>Dado que faltan campos obligatorios<br>Cuando intenta registrar el envío<br>Entonces el sistema muestra errores de validación<br>Y no permite el registro | EP-002 |
+| US-005 | Ver envíos | Como usuario, quiero visualizar envíos activos. | - Escenario 1: Lista disponible<br>Dado que existen envíos registrados<br>Cuando accede a la sección de envíos<br>Entonces el sistema muestra la lista completa de envíos activos<br><br>- Escenario 2: Lista vacía<br>Dado que no existen envíos registrados<br>Cuando accede a la sección<br>Entonces el sistema muestra un mensaje indicando que no hay registros | EP-002 |
+| US-006 | Ver detalle | Como usuario, quiero ver detalles del envío. | - Escenario 1: Visualización correcta<br>Dado que el usuario selecciona un envío<br>Cuando accede al detalle<br>Entonces el sistema muestra temperatura, humedad y estado del envío<br><br>- Escenario 2: Error de carga<br>Dado que ocurre un fallo en el sistema<br>Cuando intenta visualizar el detalle<br>Entonces el sistema muestra un mensaje de error | EP-002 |
+| TS-003 | CRUD envíos | Como developer, quiero gestionar envíos. | - Escenario 1: Consulta exitosa<br>Dado que existen envíos en la base de datos<br>Cuando se realiza una consulta<br>Entonces el sistema retorna la lista correctamente<br><br>- Escenario 2: Error interno<br>Dado que ocurre un fallo en el servidor<br>Cuando se realiza la consulta<br>Entonces el sistema retorna un error | EP-002 |
+| US-007 | Asignar sensor | Como logística, quiero vincular sensores. | - Escenario 1: Asignación correcta<br>Dado que el usuario selecciona un sensor válido<br>Cuando lo vincula al envío<br>Entonces el sistema asocia correctamente el sensor<br><br>- Escenario 2: Sensor inválido<br>Dado que el sensor no existe o no está disponible<br>Cuando intenta vincularlo<br>Entonces el sistema muestra un error | EP-002 |
+| US-008 | Finalizar envío | Como logística, quiero cerrar un envío. | - Escenario 1: Finalización exitosa<br>Dado que el envío ha terminado<br>Cuando el usuario lo finaliza<br>Entonces el sistema cambia su estado a completado<br>Y lo envía al historial<br><br>- Escenario 2: Error en cierre<br>Dado que ocurre un fallo<br>Cuando intenta finalizar el envío<br>Entonces el sistema no guarda los cambios | EP-002 |
+| TS-004 | Asignación sensor | Como developer, quiero vincular sensores. | - Escenario 1: Asignación válida<br>Dado que el sensor existe<br>Cuando se realiza la vinculación<br>Entonces el sistema lo asocia correctamente al envío<br><br>- Escenario 2: Error<br>Dado que el sensor no es válido<br>Cuando se intenta asignar<br>Entonces el sistema retorna error | EP-002 |
+| US-009 | Ver temperatura | Como usuario, quiero visualizar temperatura. | - Escenario 1: Datos en tiempo real<br>Dado que el sensor está activo<br>Cuando el usuario accede al monitoreo<br>Entonces el sistema muestra la temperatura actualizada<br><br>- Escenario 2: Sin conexión<br>Dado que el sensor no envía datos<br>Cuando accede al monitoreo<br>Entonces el sistema muestra una advertencia | EP-003 |
+| US-010 | Ver humedad | Como usuario, quiero visualizar humedad. | - Escenario 1: Visualización correcta<br>Dado que el sensor está funcionando correctamente<br>Cuando el usuario accede al monitoreo<br>Entonces el sistema muestra el porcentaje de humedad actualizado<br><br>- Escenario 2: Error de sensor<br>Dado que el sensor no envía datos<br>Cuando accede al monitoreo<br>Entonces el sistema muestra una alerta de error | EP-003 |
+| US-011 | Estado del envío | Como usuario, quiero ver estado general. | - Escenario 1: Estado normal<br>Dado que las condiciones están dentro del rango<br>Cuando el sistema evalúa los datos<br>Entonces muestra un estado óptimo<br><br>- Escenario 2: Estado crítico<br>Dado que los valores están fuera de rango<br>Cuando el sistema evalúa los datos<br>Entonces muestra un estado de alerta | EP-003 |
+| US-012 | Gráficos | Como usuario, quiero ver gráficos históricos. | - Escenario 1: Datos disponibles<br>Dado que existen registros<br>Cuando accede a los gráficos<br>Entonces el sistema muestra la información visual<br><br>- Escenario 2: Sin datos<br>Dado que no existen registros<br>Cuando accede<br>Entonces el sistema muestra un mensaje informativo | EP-003 |
+| TS-005 | Integración IoT | Como developer, quiero recibir datos. | - Escenario 1: Recepción válida<br>Dado que el sensor envía datos correctamente<br>Cuando el sistema los recibe<br>Entonces los almacena en la base de datos<br><br>- Escenario 2: Datos inválidos<br>Dado que los datos están corruptos<br>Cuando se reciben<br>Entonces el sistema los descarta | EP-003 |
+| TS-006 | Tiempo real | Como developer, quiero usar WebSockets. | - Escenario 1: Conexión activa<br>Dado que la conexión está establecida<br>Cuando llegan nuevos datos<br>Entonces el sistema actualiza la información en tiempo real<br><br>- Escenario 2: Desconexión<br>Dado que se pierde la conexión<br>Cuando el sistema lo detecta<br>Entonces intenta reconectar automáticamente | EP-003 |
+| US-013 | Alertas temperatura | Como usuario, quiero recibir alertas. | - Escenario 1: Alerta generada<br>Dado que la temperatura supera los límites establecidos<br>Cuando el sistema detecta la anomalía<br>Entonces genera una alerta<br>Y notifica al usuario<br><br>- Escenario 2: Condición normal<br>Dado que los valores están dentro del rango<br>Cuando se monitorea el envío<br>Entonces no se genera ninguna alerta | EP-004 |
+| US-014 | Notificación conductor | Como transporte, quiero alertas inmediatas. | - Escenario 1: Recepción correcta<br>Dado que se genera una alerta<br>Cuando el sistema envía la notificación<br>Entonces el conductor la recibe en su dispositivo<br><br>- Escenario 2: Sin conexión<br>Dado que el dispositivo no tiene conexión<br>Cuando se genera la alerta<br>Entonces el sistema la almacena y la envía posteriormente | EP-004 |
+| US-015 | Historial alertas | Como usuario, quiero ver alertas pasadas. | - Escenario 1: Registros disponibles<br>Dado que existen alertas registradas<br>Cuando accede al historial<br>Entonces el sistema muestra la lista<br><br>- Escenario 2: Sin registros<br>Dado que no existen alertas<br>Cuando accede<br>Entonces el sistema muestra un mensaje vacío | EP-004 |
+| TS-007 | Motor alertas | Como developer, quiero detectar anomalías. | - Escenario 1: Detección de error<br>Dado que un valor está fuera del rango permitido<br>Cuando el sistema analiza los datos<br>Entonces genera una alerta<br><br>- Escenario 2: Sin anomalías<br>Dado que los valores son correctos<br>Cuando se analizan<br>Entonces no se ejecuta ninguna acción | EP-004 |
+| TS-008 | Notificaciones | Como developer, quiero enviar alertas. | - Escenario 1: Envío exitoso<br>Dado que existe una alerta<br>Cuando se envía la notificación<br>Entonces el usuario la recibe correctamente<br><br>- Escenario 2: Error de envío<br>Dado que ocurre un fallo<br>Cuando se intenta enviar<br>Entonces el sistema reintenta el envío | EP-004 |
+| US-016 | Ver historial | Como usuario, quiero revisar historial. | - Escenario 1: Historial disponible<br>Dado que existen registros<br>Cuando accede al historial<br>Entonces el sistema muestra los envíos<br><br>- Escenario 2: Sin historial<br>Dado que no existen registros<br>Cuando accede<br>Entonces el sistema muestra un mensaje | EP-005 |
+| US-017 | Descargar reporte | Como logística, quiero exportar reportes. | - Escenario 1: Descarga exitosa<br>Dado que existen datos<br>Cuando solicita el reporte<br>Entonces el sistema genera un archivo descargable<br><br>- Escenario 2: Error<br>Dado que ocurre un fallo<br>Cuando solicita el reporte<br>Entonces el sistema muestra un error | EP-005 |
+| US-018 | Filtrar historial | Como usuario, quiero filtrar datos. | - Escenario 1: Filtro aplicado<br>Dado que el usuario selecciona criterios<br>Cuando aplica el filtro<br>Entonces el sistema muestra resultados filtrados<br><br>- Escenario 2: Sin coincidencias<br>Dado que no hay resultados<br>Cuando aplica el filtro<br>Entonces el sistema muestra mensaje | EP-005 |
+| TS-009 | Guardar historial | Como developer, quiero persistir datos. | - Escenario 1: Guardado correcto<br>Dado que existen datos válidos<br>Cuando se almacenan<br>Entonces se guardan correctamente<br><br>- Escenario 2: Error<br>Dado que ocurre un fallo<br>Cuando se intenta guardar<br>Entonces se registra el error | EP-005 |
+| TS-010 | Exportar PDF | Como developer, quiero generar reportes. | - Escenario 1: Generación exitosa<br>Dado que existen datos<br>Cuando se genera el PDF<br>Entonces se crea correctamente<br><br>- Escenario 2: Error<br>Dado que ocurre un fallo<br>Cuando se genera<br>Entonces muestra error | EP-005 |
+| US-019 | Ver información | Como usuario, quiero conocer la app. | - Escenario 1: Información visible<br>Dado que el usuario accede a la landing page<br>Cuando navega por la página<br>Entonces visualiza información clara sobre la aplicación<br><br>- Escenario 2: Comprensión<br>Dado que revisa el contenido<br>Cuando analiza la información<br>Entonces entiende los beneficios del sistema | EP-006 |
+| US-020 | Testimonios | Como usuario, quiero ver opiniones. | - Escenario 1: Visualización<br>Dado que existen testimonios<br>Cuando accede a la sección<br>Entonces el sistema los muestra<br><br>- Escenario 2: Navegación<br>Dado que hay múltiples testimonios<br>Cuando interactúa<br>Entonces puede cambiar entre ellos | EP-006 |
+| US-021 | Contacto | Como usuario, quiero comunicarme. | - Escenario 1: Envío correcto<br>Dado que completa el formulario<br>Cuando envía el mensaje<br>Entonces el sistema lo registra<br><br>- Escenario 2: Error<br>Dado que faltan campos<br>Cuando envía<br>Entonces el sistema muestra errores | EP-006 |
+| US-022 | Ver equipo | Como usuario, quiero ver equipo. | - Escenario 1: Visualización<br>Dado que accede a la sección<br>Cuando carga la página<br>Entonces ve los integrantes del equipo<br><br>- Escenario 2: Error<br>Dado que ocurre un fallo<br>Cuando carga<br>Entonces muestra mensaje alternativo | EP-006 |
+| US-023 | Ver funcionalidades | Como usuario, quiero ver beneficios. | - Escenario 1: Visualización<br>Dado que accede a la sección<br>Cuando navega<br>Entonces ve las funcionalidades principales<br><br>- Escenario 2: Comprensión<br>Dado que revisa el contenido<br>Cuando analiza la información<br>Entonces entiende el valor del sistema | EP-006 |
+| TS-011 | Formulario contacto | Como developer, quiero guardar mensajes. | - Escenario 1: Guardado correcto<br>Dado que se envían datos válidos<br>Cuando se procesa la solicitud<br>Entonces se almacenan correctamente<br><br>- Escenario 2: Error<br>Dado que los datos son inválidos<br>Cuando se procesa<br>Entonces se rechaza | EP-006 |
+| TS-012 | Testimonios API | Como developer, quiero listar testimonios. | - Escenario 1: Datos disponibles<br>Dado que existen testimonios<br>Cuando se consulta la API<br>Entonces retorna la lista<br><br>- Escenario 2: Sin datos<br>Dado que no existen registros<br>Cuando se consulta<br>Entonces retorna lista vacía | EP-006 |
 
 ## 3.3. Impact Mapping
 
 ## 3.4. Product Backlog
+| Prioridad | User Story ID | Título HU | Story Points |
+|----------|--------------|----------|-------------|
+| 1 | US-001 | Registro de usuario | 5 |
+| 2 | US-002 | Inicio de sesión | 5 |
+| 3 | US-004 | Crear envío | 8 |
+| 4 | US-007 | Asignar sensor a envío | 8 |
+| 5 | US-009 | Ver temperatura en tiempo real | 8 |
+| 6 | US-010 | Ver humedad en tiempo real | 8 |
+| 7 | US-013 | Alertas de temperatura | 8 |
+| 8 | US-014 | Notificación al conductor | 5 |
+| 9 | US-006 | Ver detalle del envío | 5 |
+| 10 | US-011 | Estado del envío | 5 |
+| 11 | US-005 | Ver envíos activos | 5 |
+| 12 | US-008 | Finalizar envío | 5 |
+| 13 | US-012 | Visualizar gráficos históricos | 8 |
+| 14 | US-015 | Ver historial de alertas | 5 |
+| 15 | US-016 | Ver historial de envíos | 5 |
+| 16 | US-018 | Filtrar historial | 5 |
+| 17 | US-003 | Recuperar contraseña | 3 |
+| 18 | US-017 | Descargar reporte | 8 |
+| 19 | US-019 | Ver información de la app (Landing) | 3 |
+| 20 | US-020 | Ver testimonios | 3 |
+| 21 | US-021 | Formulario de contacto | 3 |
+| 22 | US-022 | Ver equipo de desarrollo | 2 |
+| 23 | US-023 | Ver funcionalidades del sistema | 3 |
 
 # Capitulo IV: Product Design
 
