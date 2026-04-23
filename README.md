@@ -193,8 +193,8 @@ Insights TB1 (Todos participaron):
 
 | **Criterio específico** | **Acciones realizadas** | **Conclusiones** |
 |-------------------------|--------------------------|------------------|
-| Comunica oralmente con efectividad a diferentes rangos de audiencia. | **Eslander Celis Berrospi (TB1):**<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.<br><br>**Nombre del integrande 2  (TB1):**<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.| aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa |
-| Comunica por escrito con efectividad a diferentes rangos de audiencia. | **Eslander Celis Berrospi (TB1):**<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.<br><br>**Nombre del integrande 2  (TB1):**<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.| aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa |
+| Comunica oralmente con efectividad a diferentes rangos de audiencia. | **Eslander Celis Berrospi (TB1):**<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.<br><br>**Rodrigo Oblitas Alcalde (TB1):**<br>Yo me encargue de desarrollar desde Lean UX hasta Lean UX Canvas y tambien la landing page. Durante este proceso organice las ideas principales del producto, estructure la propuesta inicial y presente el contenido de forma clara para que el avance del proyecto pudiera comunicarse mejor al equipo y a la audiencia.| Mi participacion permitio comunicar de manera oral el enfoque inicial del proyecto con mayor claridad, orden y coherencia durante el desarrollo del TB1. |
+| Comunica por escrito con efectividad a diferentes rangos de audiencia. | **Eslander Celis Berrospi (TB1):**<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.<br><br>**Rodrigo Oblitas Alcalde (TB1):**<br>Desarrolle las secciones de Lean UX, Lean UX Canvas y la landing page, redactando el contenido en primera instancia y organizandolo para que la informacion del proyecto fuera comprensible, consistente y alineada con los objetivos planteados.| Con este trabajo aporte a que la documentacion inicial del proyecto quedara bien estructurada y facilitara la comprension de la propuesta por parte de distintos lectores. |
 
 
 # Project: 
@@ -723,6 +723,18 @@ Si tuviera una app que le avise de problemas con la temperatura, ¿cómo le gust
 | **Link del video** | ---- |
 | **Foto entrevista** | <img src="images/entrevista1-segmento1.png" alt=""  width="250" /> |
 | **Resumen** | Gianelly Vásquez, supervisora de control de calidad en transporte de alimentos refrigerados que vive en Jesús María, actualmente gestiona el monitoreo de temperatura de forma manual usando termómetros digitales, dataloggers básicos y registros en Excel, sin contar con un sistema integrado en tiempo real, lo que genera dependencia del conductor y riesgo de errores humanos; su principal problema es la falta de visibilidad durante el trayecto, ya que las fallas en la cadena de frío suelen detectarse tarde, ocasionando pérdidas de productos, especialmente en rutas largas, y dificultando una reacción oportuna ante emergencias; por ello, considera que la solución ideal debería ofrecer monitoreo en tiempo real, alertas automáticas ante variaciones de temperatura, ubicación del vehículo, historial de datos y una interfaz fácil de usar desde el celular, creyendo que una aplicación como ColdTrack podría mejorar el control, reducir pérdidas y optimizar la operación logística. |
+
+| **ENTREVISTA 2** | |
+|------------------|----------------------------|
+| **Nombre entrevistado** | Valeria Rodriguez |
+| **Edad** | 38 |
+| **Profesion** | conductora de transporte de carga refrigerada |
+| **Departamento** | Lima |
+| **Inicio del video** | 00:00 |
+| **Fin del video** | 02:35 |
+| **Link del video** | ---- |
+| **Foto entrevista** | ---- |
+| **Resumen** | Valeria Rodriguez, conductora con 12 anos de experiencia en transporte de carga refrigerada de carnes, lacteos y frutas, senala que actualmente verifica la temperatura revisando el termometro del camion durante las paradas o cuando percibe alguna anomalia; para apoyarse en la ruta utiliza principalmente GPS como Google Maps, WhatsApp y, en ocasiones, la aplicacion de la empresa. Entre los principales problemas que enfrenta menciona los retrasos, las fallas del equipo y la dificultad para detectar a tiempo cambios de temperatura, recordando incluso una situacion en la que se malogro una carga porque la refrigeracion fallo y recien lo noto en la siguiente parada. Ante incidentes de este tipo, suele avisar a la base, seguir instrucciones e intentar resolver lo basico, aunque reconoce que en muchas zonas no hay senal y solo puede comunicarse cuando recupera cobertura o mediante llamadas breves. Considera que una solucion como ColdTrack deberia ofrecer alertas sonoras y visuales, claras pero no invasivas para no distraer durante la conduccion, ademas de una aplicacion simple, automatica y que solo alerte cuando exista un problema real. |
 ### 2.2.3. Analisis de entrevistas
 
 ## 2.3. Needfinding
