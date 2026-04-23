@@ -194,7 +194,7 @@ Insights TB1 (Todos participaron):
 | **Criterio específico** | **Acciones realizadas** | **Conclusiones** |
 |-------------------------|--------------------------|------------------|
 | Comunica oralmente con efectividad a diferentes rangos de audiencia. | **Eslander Celis Berrospi (TB1):**<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa. | aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa |
-| Comunica por escrito con efectividad a diferentes rangos de audiencia. | **Eslander Celis Berrospi (TB1):**<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.<br><br>**Rodrigo Oblitas Alcalde (TB1):**<br>Desarrolle las secciones de Lean UX, Lean UX Canvas y la landing page, redactando el contenido en primera instancia y organizandolo para que la informacion del proyecto fuera comprensible, consistente y alineada con los objetivos planteados.| Con este trabajo aporte a que la documentacion inicial del proyecto quedara bien estructurada y facilitara la comprension de la propuesta por parte de distintos lectores. |
+| Estructura y documenta propuestas del proyecto de manera clara, coherente y comprensible para distintos lectores. | **Eslander Celis Berrospi (TB1):**<br>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.<br><br>**Rodrigo Oblitas Alcalde (TB1):**<br>Desarrolle las secciones de Lean UX, Lean UX Canvas y la landing page, redactando el contenido en primera instancia y organizandolo para que la informacion del proyecto fuera comprensible, consistente y alineada con los objetivos planteados.| Con este trabajo aporte a que la documentacion inicial del proyecto quedara bien estructurada y facilitara la comprension de la propuesta por parte de distintos lectores. |
 
 
 # Project: 
